@@ -1,10 +1,4 @@
-# Hyacinth
-💨 Build web projects with speed.
+# Build Service: ESM
+⛏ Repository for bundling Node.js-only modules into portable ESM modules.
 
-Documentation available at [kb.ltgc.cc](https://kb.ltgc.cc/hyacinth/).
-
-## Key features
-* No BS configurations, just build.
-* Uses `esbuild` and `lightningcss` under the hood.
-* Runtime agnostic, no support towards any single runtime.
-* Directory structured.
+Used for getting rid of the Node.js requirement from several projects.
