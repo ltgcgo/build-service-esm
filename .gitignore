@@ -5,3 +5,6 @@ build
 *.map
 dist/*.js
 dist/*.css
+
+node_modules
+package-lock.json
