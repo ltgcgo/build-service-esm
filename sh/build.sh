@@ -22,7 +22,7 @@ else
 	echo "No CSS targets available."
 fi
 echo "Now building JS."
-substRules='s/{var /{let /g;s/}var /}let /g;s/;var /;let /g;s/(var /(let /g;s/var /"use strict";let /'
+#substRules='s/{var /{let /g;s/}var /}let /g;s/;var /;let /g;s/(var /(let /g;s/var /"use strict";let /'
 if [ -d "./src" ]; then
 	ls -1 src | while IFS= read -r dir ; do
 		if [ -e "src/${dir}/index.js" ] ; then
@@ -33,7 +33,7 @@ if [ -d "./src" ]; then
 		if [ -e "src/${dir}/index.mjs" ] ; then
 			echo "Building JS module \"${dir}\"..."
 			shx live $dir --minify $1 > /dev/null
-			sed -zi "$substRules" "dist/${dir}.mjs"
+			#sed -zi "$substRules" "dist/${dir}.mjs"
 		fi
 	done
 else

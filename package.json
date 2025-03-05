@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@adobe/fetch": "^4.1.1",
     "masto": "^6.6.4",
     "matrix-js-sdk": "^31.4.0"
   }
